@@ -770,13 +770,16 @@ function initVideos() {
     document.body.style.overflow = 'hidden';
     if (lenis) lenis.stop();
     
+    // Make modal interactive instantly on open start
+    modal.style.pointerEvents = 'auto';
+    console.log('[Video Modal] openModal() started, set pointerEvents: auto');
+    
     // GSAP show timeline
     const tl = gsap.timeline();
     tl.to(modal, {
       display: 'flex',
       visibility: 'visible',
       opacity: 1,
-      pointerEvents: 'auto',
       duration: 0.3,
       ease: 'power2.out'
     });
@@ -805,6 +808,8 @@ function initVideos() {
     modalVideo.pause();
     clearTimeout(controlsTimeout);
     
+    console.log('[Video Modal] closeModal() started');
+    
     // Hide loading / error states
     if (loaderOverlay) loaderOverlay.classList.remove('active');
     if (errorOverlay) errorOverlay.classList.remove('active');
@@ -819,6 +824,8 @@ function initVideos() {
         modalVideo.src = '';
         document.body.style.overflow = '';
         if (lenis) lenis.start(); // Restart Lenis smooth scroll
+        modal.style.pointerEvents = 'none'; // Lock clicks after complete hide
+        console.log('[Video Modal] closeModal() animation complete, set pointerEvents: none');
       }
     });
     tl.to(modal.querySelector('.video-modal-wrapper'), {
@@ -828,7 +835,6 @@ function initVideos() {
     });
     tl.to(modal, {
       opacity: 0,
-      pointerEvents: 'none',
       duration: 0.25,
       ease: 'power2.in'
     }, '-=0.15');
@@ -1164,6 +1170,7 @@ function initVideos() {
   if (modalCloseBtn) {
     modalCloseBtn.addEventListener('click', (e) => {
       e.stopPropagation();
+      console.log('[Video Modal] Close button clicked');
       closeModal();
     });
   }
@@ -1171,6 +1178,7 @@ function initVideos() {
   if (modalBackdrop) {
     modalBackdrop.addEventListener('click', (e) => {
       e.stopPropagation();
+      console.log('[Video Modal] Backdrop clicked');
       closeModal();
     });
   }
@@ -1179,9 +1187,11 @@ function initVideos() {
   window.addEventListener('keydown', (e) => {
     if (isModalOpen) {
       if (e.key === 'Escape') {
+        console.log('[Video Modal] Escape key pressed');
         closeModal();
       } else if (e.key === ' ' || e.code === 'Space') {
         e.preventDefault(); // prevent page scroll
+        console.log('[Video Modal] Space key pressed, toggle play');
         togglePlay();
       }
     }

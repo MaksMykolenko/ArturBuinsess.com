@@ -1711,11 +1711,13 @@ section {
   border-radius: 50%;
 }
 
-.video-modal-close-btn svg {
+.video-modal-close-btn svg,
+.video-modal-close-btn svg * {
   width: 20px;
   height: 20px;
   position: relative;
   z-index: 1;
+  pointer-events: none;
 }
 
 .video-modal-close-btn:hover {
