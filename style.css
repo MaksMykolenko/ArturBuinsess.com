@@ -1620,6 +1620,7 @@ section {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   z-index: 1;
+  pointer-events: auto;
 }
 
 .video-modal-wrapper {
@@ -1691,8 +1692,9 @@ section {
   box-shadow: 0 0 20px rgba(122, 45, 255, 0.4);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
               box-shadow 0.3s ease;
-  z-index: 3;
+  z-index: 10;
   overflow: hidden;
+  pointer-events: auto;
 }
 
 .video-modal-close-btn::after {

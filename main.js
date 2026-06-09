@@ -776,6 +776,7 @@ function initVideos() {
       display: 'flex',
       visibility: 'visible',
       opacity: 1,
+      pointerEvents: 'auto',
       duration: 0.3,
       ease: 'power2.out'
     });
@@ -827,6 +828,7 @@ function initVideos() {
     });
     tl.to(modal, {
       opacity: 0,
+      pointerEvents: 'none',
       duration: 0.25,
       ease: 'power2.in'
     }, '-=0.15');
