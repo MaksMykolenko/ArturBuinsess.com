@@ -1,6 +1,8 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import video1 from './videos/video_2026-06-09_13-59-02.mp4';
+import video2 from './videos/video_2026-06-09_14-00-02.mp4';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -596,13 +598,13 @@ function renderVideoCards() {
   
   const videosData = [
     {
-      src: '/videos/video_2026-06-09_13-59-02.mp4',
+      src: video1,
       title: 'Артур у русі',
       description: 'Бо фото — це добре, але іноді треба доказати, що персонаж не NPC.',
       poster: ''
     },
     {
-      src: '/videos/video_2026-06-09_14-00-02.mp4',
+      src: video2,
       title: 'Живий вайб',
       description: 'Той самий момент, коли портфоліо стало трохи менш офіційним.',
       poster: ''
