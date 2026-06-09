@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark-theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Артур — Нагуляний, але перспективний | Особиста сторінка</title>
+  <meta name="description" content="Це не LinkedIn, тому тут без зайвого пафосу. Світ Артура: комп'ютери, технології, зелений капелюх та вміння розбиратися в ситуації.">
+  <meta name="keywords" content="Артур, капелюх, комп'ютери, нагуляний, перспективний, веб-розробник, рофли">
+  <meta name="author" content="Артур">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Артур — Нагуляний, але перспективний">
+  <meta property="og:description" content="Це не LinkedIn, тому тут без пафосу. Заходь, тут затишно.">
+  <meta property="og:image" content="/files/photo_2026-06-09_13-39-22.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Custom Glow Cursor Follower -->
+  <div id="custom-cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <h1 class="preloader-title" id="preloader-text">
+        <span class="char">A</span>
+        <span class="char">r</span>
+        <span class="char">t</span>
+        <span class="char">h</span>
+        <span class="char">u</span>
+        <span class="char">r</span>
+        <span class="space">&nbsp;</span>
+        <span class="char">P</span>
+        <span class="char">o</span>
+        <span class="char">r</span>
+        <span class="char">t</span>
+        <span class="char">f</span>
+        <span class="char">o</span>
+        <span class="char">l</span>
+        <span class="char">i</span>
+        <span class="char">o</span>
+      </h1>
+      <div class="preloader-bar-container">
+        <div class="preloader-bar" id="preloader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Animated Gradient Blobs -->
+  <div class="background-blobs-container" aria-hidden="true">
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header id="header" class="site-header">
+    <div class="header-container">
+      <a href="#hero" class="logo-link" id="nav-logo">
+        <span class="logo-text">ARTHUR</span>
+        <span class="logo-dot"></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" id="link-about">Хто це?</a></li>
+          <li><a href="#timeline-section" class="nav-link" id="link-timeline">Вайб</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Скіли</a></li>
+          <li><a href="#gallery" class="nav-link" id="link-gallery">Галерея</a></li>
+          <li><a href="#videos" class="nav-link" id="link-videos">Відео</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm btn-glow" id="header-contact-btn">Написати</a>
+        <!-- Mobile Menu Trigger -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+          <span class="burger-line line-1"></span>
+          <span class="burger-line line-2"></span>
+          <span class="burger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Scroll Container -->
+  <main id="main-scroll-container">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-text-content">
+          <div class="badge-container scroll-reveal-fade">
+            <span class="badge">Без зайвого пафосу та резюме</span>
+          </div>
+          <h1 class="hero-title" id="hero-main-title">
+            <span class="word">Привіт,</span>
+            <span class="word">я</span>
+            <span class="word-highlight">Артур</span>
+          </h1>
+          <p class="hero-subtitle scroll-reveal-fade" id="hero-subtitle">
+            Нагуляний, але перспективний. Люблю техніку, комп’ютери і робити вигляд, що все під контролем.
+          </p>
+          <div class="hero-buttons scroll-reveal-fade" id="hero-cta-buttons">
+            <a href="#about" class="btn btn-primary" id="hero-primary-btn">Хто це такий?</a>
+            <a href="#contact" class="btn btn-outline" id="hero-secondary-btn">Написати Артуру</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-container">
+          <div class="tilt-card-wrapper" id="hero-tilt-wrapper">
+            <div class="glass-card hero-image-card">
+              <div class="image-inner-wrapper">
+                <img 
+                  src="/files/photo_2026-06-09_13-39-22.jpg" 
+                  alt="Артур за ноутбуком з розумним виглядом" 
+                  class="hero-photo-img"
+                  id="hero-profile-img"
+                  loading="eager"
+                  fetchpriority="high"
+                >
+                <div class="card-glow-overlay"></div>
+              </div>
+              <!-- Floating UI elements for futuristic look -->
+              <div class="floating-badge badge-top-right scroll-reveal-scale">
+                <div class="badge-icon">⚡</div>
+                <div class="badge-txt">
+                  <span>Не панікую (майже)</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom-left scroll-reveal-scale">
+                <div class="badge-icon">🎨</div>
+                <div class="badge-txt">
+                  <span>Зелений капелюх</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator-wrapper" aria-label="Скролити до секції Про мене">
+        <span class="scroll-text">Гортай далі</span>
+        <div class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </div>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal-up">
+          <h2 class="section-title">Хто це такий?</h2>
+          <p class="section-subtitle">Іноді серйозний розробник, іноді просто Артур</p>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-image-wrapper scroll-reveal-left">
+            <div class="tilt-card-wrapper" data-tilt>
+              <div class="glass-card image-card-premium">
+                <img 
+                  src="/files/photo_2026-06-09_13-39-20.jpg" 
+                  alt="Артур на максимальному стилі" 
+                  class="about-photo-img"
+                  loading="lazy"
+                >
+                <div class="image-overlay-info">
+                  <span class="overlay-title">Максимальний стиль</span>
+                  <span class="overlay-desc">Зелений капелюх. Питань немає.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-text-content scroll-reveal-right">
+            <h3 class="about-highlight-title">Трохи про мої будні</h3>
+            <p class="about-paragraph">
+              Я Артур. Можу сидіти за ноутом з максимально серйозним лицем, можу ходити в зеленому капелюсі, а можу просто з’явитися на фото так, ніби це обкладинка майбутньої легенди.
+            </p>
+            <p class="about-paragraph">
+              Люблю розбиратися з технікою, пробувати нове і не панікувати, коли щось не працює. Ну, майже не панікувати. Для мене головне — щоб процес приносив задоволення, а результат виглядав круто.
+            </p>
+            
+            <div class="personal-traits">
+              <div class="trait-item">
+                <div class="trait-icon">💻</div>
+                <div>
+                  <h4 class="trait-title">Робочий режим</h4>
+                  <p class="trait-desc">Можу годинами шукати один пропущений символ у коді з обличчям хакера з фільмів.</p>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="trait-icon">🎒</div>
+                <div>
+                  <h4 class="trait-title">Режим прогулянки</h4>
+                  <p class="trait-desc">Нагуляний та відкритий до нових пригод, ідей, кави та гарних ракурсів.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning & Tech Timeline Section -->
+    <section id="timeline-section" class="timeline-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal-up">
+          <h2 class="section-title">Природне середовище</h2>
+          <p class="section-subtitle">Як Артур еволюціонував серед моніторів та дротів</p>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="timeline-grid">
+          <div class="timeline-content-side">
+            <!-- Timeline SVG Wrapper -->
+            <div class="timeline-container">
+              <!-- SVG Path for the animated line -->
+              <svg class="timeline-svg-line" viewBox="0 0 10 100" preserveAspectRatio="none">
+                <line x1="5" y1="0" x2="5" y2="100" class="line-bg" />
+                <line x1="5" y1="0" x2="5" y2="100" class="line-progress" id="timeline-progress-bar" />
+              </svg>
+              
+              <!-- Timeline Items -->
+              <div class="timeline-item scroll-reveal-up" id="timeline-item-1">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-card glass-card">
+                  <span class="timeline-date">Перший запуск</span>
+                  <h3 class="timeline-card-title">Зламав і полагодив</h3>
+                  <p class="timeline-card-desc">Вперше увімкнув комп'ютер і зрозумів, що це кохання з першого кліку. Зламав Windows, перевстановив самостійно і відчув себе генієм ІТ.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item scroll-reveal-up" id="timeline-item-2">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-card glass-card">
+                  <span class="timeline-date">Академічний етап</span>
+                  <h3 class="timeline-card-title">Комп'ютерні класи</h3>
+                  <p class="timeline-card-desc">Багато моніторів, купу дротів і пари, де ми з командою намагалися розібратися, чому консоль виводить помилку червоним кольором.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item scroll-reveal-up" id="timeline-item-3">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-card glass-card">
+                  <span class="timeline-date">Нагуляний досвід</span>
+                  <h3 class="timeline-card-title">Свідомий кодинг</h3>
+                  <p class="timeline-card-desc">Перехід від простого натискання клавіш до створення речей, які реально працюють. Навчуся будь-якій технології, якщо в гуглі не забанять.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item scroll-reveal-up" id="timeline-item-4">
+                <div class="timeline-dot-wrapper">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-card glass-card">
+                  <span class="timeline-date">Наші дні</span>
+                  <h3 class="timeline-card-title">Motion-розробник</h3>
+                  <p class="timeline-card-desc">Поєдную гарний дизайн, анімації та код. Вони виглядають преміально, працюють швидко, а за логіку мені навіть не соромно перед колегами.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-visual-side scroll-reveal-right">
+            <div class="tilt-card-wrapper" data-tilt>
+              <div class="glass-card image-card-premium">
+                <img 
+                  src="/files/photo_2026-06-09_13-39-27.jpg" 
+                  alt="Артур в комп'ютерній аудиторії" 
+                  class="timeline-photo-img"
+                  loading="lazy"
+                >
+                <div class="image-overlay-info">
+                  <span class="overlay-title">Навчання & Технології</span>
+                  <span class="overlay-desc">Тут Артур у природному середовищі: комп’ютери, дроти, монітори і легке відчуття, що зараз щось або запрацює, або стане ще цікавіше.</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="learning-stats glass-card scroll-reveal-up">
+              <div class="stat-box">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Практичний інтерес</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Готовність до тестів</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal-up">
+          <h2 class="section-title">Справжні скіли</h2>
+          <p class="section-subtitle">Те, що реально допомагає виживати в розробці та житті</p>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="skills-grid" id="skills-grid-container">
+          <!-- Skill Card 0 (Головний скіл) -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-0">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Потужність</h3>
+            <p class="skill-desc">Потужний як Зеленський. Тут без компромісів.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Рівень потужності</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 1 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-1">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Гуглити як senior</h3>
+            <p class="skill-desc">Якщо щось не працює — значить, хтось вже питав це на форумі 8 років тому.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Швидкість пошуку</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 98%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+          
+          <!-- Skill Card 2 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-2">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Перезапустити і зробити вигляд, що так і було</h3>
+            <p class="skill-desc">Класика технічного виживання. Іноді реально допомагає.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Відсоток успіху</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+          
+          <!-- Skill Card 3 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-3">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Виглядати зайнятим за ноутом</h3>
+            <p class="skill-desc">Серйозний погляд, чашка поруч, екран відкритий — атмосфера продуктивності створена.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Рівень переконливості</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-4">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Розібратися по ходу</h3>
+            <p class="skill-desc">Не завжди ясно, що відбувається, але в кінці якось виходить.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Впевненість у результаті</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-5">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Натиснути не ту кнопку, але врятувати ситуацію</h3>
+            <p class="skill-desc">Досвід приходить через помилки. Бажано не критичні.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Стресостійкість</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-6">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Командна робота</h3>
+            <p class="skill-desc">Можу працювати з людьми, особливо якщо всі нормально пояснюють, що треба зробити.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Комунікація</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 7 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-7">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/>
+                <line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/>
+                <line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/>
+                <line x1="20" y1="15" x2="23" y2="15"/>
+                <line x1="1" y1="9" x2="4" y2="9"/>
+                <line x1="1" y1="15" x2="4" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Технічний вайб</h3>
+            <p class="skill-desc">Комп’ютери, дроти, монітори — нормальне середовище для життя.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Ступінь кібернетизації</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 8 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-8">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Не панікувати одразу</h3>
+            <p class="skill-desc">Спочатку подивитися, що сталося. Потім вже можна трохи панікувати.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Витримка</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 9 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-9">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Робити серйозне лице</h3>
+            <p class="skill-desc">Особливо коли нічого не зрозуміло, але треба виглядати впевнено.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Рівень акторської гри</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+
+          <!-- Skill Card 10 -->
+          <div class="skill-card glass-card scroll-reveal-scale" id="skill-10">
+            <div class="skill-icon-wrapper">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="skill-title">Довести до нормального стану</h3>
+            <p class="skill-desc">Може не ідеально з першого разу, але в результаті буде виглядати нормально.</p>
+            <div class="skill-level-container">
+              <span class="skill-level-label">Результативність</span>
+              <div class="skill-level-bar"><div class="skill-level-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="card-sweep-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal-up">
+          <h2 class="section-title">Галерея</h2>
+          <p class="section-subtitle">Спроби виглядати фотогенічно у різних сценаріях</p>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="gallery-grid" id="gallery-grid-container">
+          <!-- Gallery Item 1 (Laptop - Hero Image Context) -->
+          <div class="gallery-item glass-card scroll-reveal-scale" data-tilt>
+            <div class="gallery-image-wrapper">
+              <img src="/files/photo_2026-06-09_13-39-22.jpg" alt="Робочий режим: ноут, чашка, важливий вигляд" class="gallery-photo-img" loading="lazy">
+              <div class="gallery-info-overlay">
+                <h3 class="gallery-item-title">Робочий режим: ноут, чашка, важливий вигляд</h3>
+                <p class="gallery-item-category">Робочий процес / Ноут</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Gallery Item 2 (Green Hat - Lifestyle Context) -->
+          <div class="gallery-item glass-card scroll-reveal-scale" data-tilt>
+            <div class="gallery-image-wrapper">
+              <img src="/files/photo_2026-06-09_13-39-20.jpg" alt="Зелений капелюх — це вже рівень" class="gallery-photo-img" loading="lazy">
+              <div class="gallery-info-overlay">
+                <h3 class="gallery-item-title">Зелений капелюх — це вже рівень</h3>
+                <p class="gallery-item-category">Максимальний стиль</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 (Classroom - Tech Context) -->
+          <div class="gallery-item glass-card scroll-reveal-scale" data-tilt>
+            <div class="gallery-image-wrapper">
+              <img src="/files/photo_2026-06-09_13-39-27.jpg" alt="Технічна атмосфера і погляд людини, яка щось знає" class="gallery-photo-img" loading="lazy">
+              <div class="gallery-info-overlay">
+                <h3 class="gallery-item-title">Технічна атмосфера і погляд людини, яка щось знає</h3>
+                <p class="gallery-item-category">Оточення / Tech Lab</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 (Red Wall - Gallery Context) -->
+          <div class="gallery-item glass-card scroll-reveal-scale" data-tilt>
+            <div class="gallery-image-wrapper">
+              <img src="/files/photo_2026-06-09_13-39-24.jpg" alt="Легендарний ракурс. Без пояснень." class="gallery-photo-img" loading="lazy">
+              <div class="gallery-info-overlay">
+                <h3 class="gallery-item-title">Легендарний ракурс. Без пояснень.</h3>
+                <p class="gallery-item-category">Харизма / Посмішка</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="video-section">
+      <div class="section-container">
+        <div class="section-header scroll-reveal-up">
+          <h2 class="section-title">Відео-моменти</h2>
+          <p class="section-subtitle">Трохи руху, трохи вайбу, трохи Артура в реальному житті.</p>
+          <div class="title-line"></div>
+        </div>
+        
+        <div class="video-grid" id="video-grid-container">
+          <!-- Video Card 1 -->
+          <article class="video-card glass-card scroll-reveal-scale" data-tilt>
+            <div class="video-frame">
+              <video 
+                src="/videos/video_2026-06-09_13-59-02.mp4#t=0.001" 
+                class="video-element" 
+                playsinline 
+                preload="metadata"
+              >
+                Ваш браузер не підтримує відео.
+              </video>
+              <div class="video-overlay">
+                <button class="video-play-btn" aria-label="Відтворити відео">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <h3 class="video-card-title">Артур у русі</h3>
+            <p class="video-card-desc">Бо фото — це добре, але іноді треба доказати, що персонаж не NPC.</p>
+          </article>
+          
+          <!-- Video Card 2 -->
+          <article class="video-card glass-card scroll-reveal-scale" data-tilt>
+            <div class="video-frame">
+              <video 
+                src="/videos/video_2026-06-09_14-00-02.mp4#t=0.001" 
+                class="video-element" 
+                playsinline 
+                preload="metadata"
+              >
+                Ваш браузер не підтримує відео.
+              </video>
+              <div class="video-overlay">
+                <button class="video-play-btn" aria-label="Відтворити відео">
+                  <svg viewBox="0 0 24 24" class="play-icon">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <h3 class="video-card-title">Живий вайб</h3>
+            <p class="video-card-desc">Той самий момент, коли портфоліо стало трохи менш офіційним.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action (CTA) & Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <!-- Glowing gradient border wrapper -->
+        <div class="cta-glowing-wrapper scroll-reveal-up">
+          <div class="cta-inner-card glass-card">
+            
+            <div class="cta-content-grid">
+              <div class="cta-info-side">
+                <h2 class="cta-title">Напиши мені</h2>
+                <p class="cta-description">
+                  Хочеш написати Артуру? Пиши. Він може відповісти швидко, а може спочатку подумає, що відповісти красиво.
+                </p>
+                
+                <div class="cta-channels">
+                  <!-- Telegram Magnetic Button -->
+                  <a href="https://t.me/your_telegram" target="_blank" rel="noopener noreferrer" class="magnetic-btn btn btn-primary" id="btn-telegram">
+                    <span class="btn-text">Telegram</span>
+                    <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </a>
+                  
+                  <!-- Email Magnetic Button -->
+                  <a href="mailto:arthur@example.com" class="magnetic-btn btn btn-outline" id="btn-email">
+                    <span class="btn-text">Email</span>
+                    <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Simple Interactive Form -->
+              <form class="cta-form-side" id="contact-form">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Як тебе звати?</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Колега / Замовник / Друг" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Твій Email (куди відповідати)</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="yourmail@domain.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Твоя пропозиція / улюблений рофл</label>
+                  <textarea id="form-message" class="form-input form-textarea" placeholder="Привіт, Артур! Маю цікаву тему..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-submit" id="form-submit-btn">
+                  <span>Відправити Артуру</span>
+                </button>
+                <div class="form-status-msg" id="form-status-msg"></div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="section-container footer-content">
+        <p class="copyright-text">&copy; 2026 Артур. Нагуляний, але перспективний.</p>
+        <p class="design-credit">Розроблено з душею та легким рофлом.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Video Modal Player -->
+  <div id="video-modal" class="video-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-video-title">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-wrapper glass-card">
+      <button class="video-modal-close-btn" id="modal-close-btn" aria-label="Закрити плеєр">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="video-modal-body">
+        <div class="video-modal-frame" id="modal-video-container">
+          <video id="modal-video-element" class="video-element" playsinline preload="metadata"></video>
+          
+          <!-- Custom Loading/Buffering Spinner -->
+          <div id="modal-video-loader" class="video-loader-overlay">
+            <div class="loader-spinner"></div>
+          </div>
+
+          <!-- Large Play Button Overlay in Modal -->
+          <div id="modal-video-play-overlay" class="modal-video-play-overlay">
+            <button class="modal-large-play-btn" aria-label="Відтворити">
+              <svg class="large-icon-play" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              <svg class="large-icon-replay" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Custom Error State Overlay -->
+          <div id="modal-video-error" class="video-error-overlay">
+            <div class="error-content">
+              <span class="error-icon">⚠️</span>
+              <p class="error-msg">Відео не завантажилось. <br>Артур тут ні до чого.</p>
+            </div>
+          </div>
+
+          <!-- Custom Control Bar -->
+          <div id="modal-video-controls" class="custom-video-controls">
+            <!-- Progress bar -->
+            <div class="progress-bar-container" id="video-progress-container">
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="video-progress-fill"></div>
+                <div class="progress-bar-handle" id="video-progress-handle"></div>
+              </div>
+            </div>
+            
+            <div class="controls-row">
+              <div class="controls-left">
+                <button id="video-play-pause-btn" class="control-btn" aria-label="Відтворення / Пауза">
+                  <!-- Play Icon -->
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                  <!-- Pause Icon -->
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                    <rect x="6" y="4" width="4" height="16"/>
+                    <rect x="14" y="4" width="4" height="16"/>
+                  </svg>
+                  <!-- Replay Icon -->
+                  <svg class="icon-replay" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                    <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                  </svg>
+                </button>
+                <span id="video-time-display" class="time-display">00:00 / 00:00</span>
+              </div>
+              
+              <div class="controls-right">
+                <!-- Speed Control -->
+                <div class="speed-control" id="video-speed-container">
+                  <button id="video-speed-btn" class="control-btn speed-btn">1x</button>
+                  <div class="speed-menu" id="video-speed-menu">
+                    <button class="speed-option" data-speed="1">1x</button>
+                    <button class="speed-option" data-speed="1.25">1.25x</button>
+                    <button class="speed-option" data-speed="1.5">1.5x</button>
+                  </div>
+                </div>
+                
+                <!-- Volume Control -->
+                <div class="volume-control-wrapper">
+                  <button id="video-mute-btn" class="control-btn" aria-label="Вимкнути / Увімкнути звук">
+                    <!-- Volume High Icon -->
+                    <svg class="icon-volume-on" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                    <!-- Volume Muted Icon -->
+                    <svg class="icon-volume-mute" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.21.05-.42.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                    </svg>
+                  </button>
+                  <input type="range" id="video-volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="Гучність">
+                </div>
+                
+                <!-- Fullscreen Control -->
+                <button id="video-fullscreen-btn" class="control-btn" aria-label="Повноекранний режим">
+                  <!-- Enter Fullscreen Icon -->
+                  <svg class="icon-fullscreen-enter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                  </svg>
+                  <!-- Exit Fullscreen Icon -->
+                  <svg class="icon-fullscreen-exit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <path d="M4 14h6v6m10-6h-6v6M4 10h6V4m10 6h-6V4"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-modal-info">
+          <div class="video-modal-badge-container">
+            <span class="video-modal-badge">Arthur Clip</span>
+          </div>
+          <h3 id="modal-video-title" class="video-modal-title"></h3>
+          <p id="modal-video-desc" class="video-modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern JS Bundles (Vite resolves import statements in main.js) -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
