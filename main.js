@@ -32,6 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initContactForm();
   initVideos();
+
+  // Intercept anchor link clicks for smooth Lenis scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetEl = document.querySelector(targetId);
+      if (targetEl && lenis) {
+        e.preventDefault();
+        
+        // Offset for the fixed header
+        lenis.scrollTo(targetEl, {
+          offset: -80,
+          duration: 1.2
+        });
+      }
+    });
+  });
 });
 
 /* ==========================================================================
