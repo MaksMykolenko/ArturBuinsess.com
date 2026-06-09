@@ -1,7 +1,4 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
-const baseUrl = import.meta.env.BASE_URL || './';
+const baseUrl = (typeof import.meta !== 'undefined' && import.meta.env) ? (import.meta.env.BASE_URL || './') : './';
 const video1 = `${baseUrl}videos/video_2026-06-09_13-59-02.mp4`;
 const video2 = `${baseUrl}videos/video_2026-06-09_14-00-02.mp4`;
 
