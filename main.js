@@ -1,8 +1,10 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
-import video1 from './videos/video_2026-06-09_13-59-02.mp4';
-import video2 from './videos/video_2026-06-09_14-00-02.mp4';
+const baseUrl = import.meta.env.BASE_URL || './';
+const video1 = `${baseUrl}videos/video_2026-06-09_13-59-02.mp4`;
+const video2 = `${baseUrl}videos/video_2026-06-09_14-00-02.mp4`;
+
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
