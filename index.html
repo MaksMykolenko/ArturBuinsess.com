@@ -829,5 +829,20 @@
 
   <!-- Modern JS Bundles (Vite resolves import statements in main.js) -->
   <script type="module" src="./main.js"></script>
+  <script>
+    // Fallback: if main JS fails to hide preloader after 4 seconds (e.g. bare import crash), force hide it
+    setTimeout(function() {
+      var preloader = document.getElementById('preloader');
+      if (preloader && preloader.style.display !== 'none') {
+        console.warn("Preloader fallback triggered: hiding stuck loader.");
+        preloader.style.transition = 'opacity 0.5s ease';
+        preloader.style.opacity = '0';
+        setTimeout(function() {
+          preloader.style.display = 'none';
+          document.body.style.overflow = '';
+        }, 500);
+      }
+    }, 4000);
+  </script>
 </body>
 </html>
